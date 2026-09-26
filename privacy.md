@@ -2,9 +2,9 @@
 title: Privacy policy
 permalink: /privacy/
 ---
-# UsAble privacy policy
+# Haven privacy policy
 
-*Alpha, last updated 2026-09-05. This page says what the app does today. It changes when the app does.*
+*Alpha, last updated 2026-09-25. This page says what the app does today. It changes when the app does.*
 
 ## The short version
 
@@ -25,7 +25,7 @@ Everything you write: notes, to-dos, commitments, day plans, and their history. 
 
 ## Google Calendar
 
-If you link a Google calendar, UsAble reads and writes events on that one calendar so your commitments stay in step with it. Access uses Google's sign-in; the tokens stay on your phone, and you can unlink at any time from the Calendar sync screen, which stops all access. UsAble's use of information received from Google APIs adheres to the Google API Services User Data Policy, including the Limited Use requirements.
+If you link a Google calendar, Haven reads and writes events on that one calendar so your commitments stay in step with it. Access uses Google's sign-in; the tokens stay on your phone, and you can unlink at any time from the Calendar sync screen, which stops all access. Haven's use of information received from Google APIs adheres to the Google API Services User Data Policy, including the Limited Use requirements.
 
 ## Who can see what
 
@@ -37,8 +37,8 @@ Server records stay while your account exists. Ask us and we delete your account
 
 ## Children
 
-UsAble is not directed at children under 13.
+Haven is not directed at children under 13.
 
 ## Contact
 
-CONTACT_EMAIL
+[hello@havencoordination.com](mailto:hello@havencoordination.com)
