@@ -37,13 +37,13 @@ What Haven does with it:
 - **Your phone does the syncing.** When you open Haven, and while it is in front, your phone
   asks Google for what changed since last time (using Google's sync token). Edits you make in
   Haven are written back to the same calendar.
-- **Our server never sees calendar data.** No event, title, time or guest ever reaches it.
+- **Our server never sees calendar data.** No event, title, time or guest ever reaches it, unless you include it in feedback you choose to send.
 - **Sharing is your act.** An event reaches another Haven user only when you send it or
   change your own meeting that they are on, the same way a note you write reaches them. Haven
   never sends your guest lists anywhere.
 - **No ads, no selling, no model training.** Haven does not sell Google data, use it for
   advertising, or use it to develop, improve or train AI or machine-learning models.
-- **No people read it.** The team never sees your calendar data.
+- **No people read it.** The team never sees your calendar data, unless you include it in feedback you choose to send.
 
 Stopping and deleting:
 
