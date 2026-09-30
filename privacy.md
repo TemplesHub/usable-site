@@ -4,7 +4,7 @@ permalink: /privacy/
 ---
 # Haven privacy policy
 
-*Alpha, last updated 2026-09-25. This page says what the app does today. It changes when the app does.*
+*Alpha, last updated 2026-09-29. This page says what the app does today. It changes when the app does.*
 
 ## The short version
 
@@ -12,7 +12,7 @@ Your notes, plans and calendar live on your phone. Our server holds only what it
 
 ## What stays on your phone
 
-Everything you write: notes, to-dos, commitments, day plans, and their history. Your Google Calendar sign-in tokens, when you link a calendar. Your local settings, chimes and reminders. Deleting the app deletes all of it.
+Everything you write: notes, to-dos, commitments, day plans, and their history. Your Google Calendar sign-in tokens and the events from a linked Google calendar, when you link one. Your local settings, chimes and reminders. Deleting the app deletes all of it.
 
 ## What our server holds
 
@@ -20,12 +20,47 @@ Everything you write: notes, to-dos, commitments, day plans, and their history. 
 - **Contact matching:** hashed forms of the contact details you choose to share for finding people you know. We do not store your address book and we do not build a graph of who knows whom.
 - **Messages in transit:** a shared note or an invitation waits on the server until the other person's phone collects it, then it is gone.
 - **A wake signal:** a push token so we can tell your phone to check for new messages. The push itself carries no content.
-- **Calendar sync plumbing:** when you link a Google calendar, an identifier for the notification channel, so Google can tell us something changed and we can tell your phone. No event, title or time ever reaches the server.
 - **Feedback you send:** the text and any screenshot you attach through Send Feedback, kept by the team to fix what you reported.
 
 ## Google Calendar
 
-If you link a Google calendar, Haven reads and writes events on that one calendar so your commitments stay in step with it. Access uses Google's sign-in; the tokens stay on your phone, and you can unlink at any time from the Calendar sync screen, which stops all access. Haven's use of information received from Google APIs adheres to the Google API Services User Data Policy, including the Limited Use requirements.
+If you link a Google calendar, Haven asks Google for two permissions:
+
+- **See the list of your calendars**, so you can pick the one to link.
+- **See and edit events on your calendars**, so that one linked calendar and your commitments
+  in Haven stay the same. Haven reads and writes events only on the calendar you picked.
+
+What Haven does with it:
+
+- **It stays on your phone.** Events from the linked calendar, and the Google sign-in tokens,
+  are kept on your phone and nowhere else. The sync runs on your phone.
+- **Your phone does the syncing.** When you open Haven, and while it is in front, your phone
+  asks Google for what changed since last time (using Google's sync token). Edits you make in
+  Haven are written back to the same calendar.
+- **Our server never sees calendar data.** No event, title, time or guest ever reaches it, unless you include it in feedback you choose to send.
+- **Sharing is your act.** An event reaches another Haven user only when you send it or
+  change your own meeting that they are on, the same way a note you write reaches them. Haven
+  never sends your guest lists anywhere.
+- **No ads, no selling, no model training.** Haven does not sell Google data, use it for
+  advertising, or use it to develop, improve or train AI or machine-learning models.
+- **No people read it.** The team never sees your calendar data, unless you include it in feedback you choose to send.
+
+Stopping and deleting:
+
+- **Unlink** on the Calendar sync screen stops all access at once: the pulls and writes stop and
+  the stored Google sign-in token is removed from your phone. You choose whether the
+  synced commitments stay in Haven or are removed from your phone. Nothing in your Google
+  calendar is changed by unlinking.
+- You can also remove Haven's access from your Google Account at
+  https://myaccount.google.com/permissions.
+- Deleting the app deletes everything it kept from Google.
+
+Haven's use and transfer of information received from Google APIs adheres to the
+[Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy),
+including the Limited Use requirements. The use of information received from Google Workspace
+scopes will adhere to the Google User Data Policy, including the Limited Use requirements.
+
+Questions: [hello@havencoordination.com](mailto:hello@havencoordination.com)
 
 ## Who can see what
 
