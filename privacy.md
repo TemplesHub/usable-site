@@ -4,7 +4,7 @@ permalink: /privacy/
 ---
 # Haven privacy policy
 
-*Alpha, last updated 2026-09-29. This page says what the app does today. It changes when the app does.*
+*Alpha, last updated 2026-10-01. This page says what the app does today. It changes when the app does.*
 
 ## The short version
 
@@ -61,6 +61,19 @@ including the Limited Use requirements. The use of information received from Goo
 scopes will adhere to the Google User Data Policy, including the Limited Use requirements.
 
 Questions: [hello@havencoordination.com](mailto:hello@havencoordination.com)
+
+## How we protect your data
+
+This covers everything Haven holds, including the data it receives from Google when you link a calendar.
+
+- **Encrypted in transit.** Every connection Haven makes, to Google and to our own server, uses TLS (HTTPS). Calendar data travels only between your phone and Google.
+- **Sign-in tokens in the iOS Keychain.** Your Google sign-in tokens and the record of your linked calendar are stored in the iOS Keychain, which is encrypted by the device and readable only by Haven.
+- **Encrypted at rest on your phone.** Events from a linked calendar are stored in Haven's private app storage. iOS keeps that storage separate from every other app and encrypts it when your phone has a passcode.
+- **Not on our servers.** Google user data is never copied to our server, so there is no server-side copy to protect, breach or hand over.
+- **The least access that works.** Haven asks Google only for the calendar list (read-only) and for events, and reads and writes events only on the one calendar you linked.
+- **Limited team access.** The server records listed above are reachable only by the small team that runs the service, over encrypted connections. Device credentials are stored hashed.
+- **Deleted when you say.** Unlinking removes the Google sign-in token from your phone; deleting the app removes everything it stored; on request we delete your account and its server records.
+- **If something goes wrong.** If we learn of a security incident affecting your data, we will tell affected users promptly at the contact details they registered.
 
 ## Who can see what
 
